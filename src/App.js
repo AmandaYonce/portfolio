@@ -25,9 +25,9 @@ const App = () => (
       </Container>
     </main>
     </Route>
-    <Route exact path="/resume">
-      <Resume/>
-    </Route>
+    <Route exact path="/resume" component={Resume} />
+      
+    
     
   </section>
 );
