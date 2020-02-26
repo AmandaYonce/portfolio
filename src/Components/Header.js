@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import img from './Images/myAvatar.png'
-
-
 import {
   Navbar, Nav,
   NavbarBrand, NavLink, NavItem, UncontrolledDropdown,
@@ -32,7 +30,7 @@ const toggle = () => setIsOpen(!isOpen)
               </NavItem>
               
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/">Resume</NavLink>
+                <NavLink className="font-weight-bold" href="/resume">Resume</NavLink>
               </NavItem>
               
               <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
@@ -40,9 +38,10 @@ const toggle = () => setIsOpen(!isOpen)
                 <DropdownMenu right>
                   <DropdownItem className="font-weight-bold text-secondary text-uppercase" header disabled>My Projects</DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>Anagrams</DropdownItem>
-                  <DropdownItem>Activity Zone</DropdownItem>
-                  <DropdownItem>Connect4</DropdownItem>
+                  <DropdownItem className="font-weight-bold" href="https://amandayonce.github.io/PhotosFromHere/">Photos From Here</DropdownItem>
+                  <DropdownItem className="font-weight-bold" href="https://amandayonce.github.io/activityZone/">Activity Zone</DropdownItem>
+                  <DropdownItem className="font-weight-bold" href="https://amandayonce.github.io/GithubUserSearch/" >GitHub User API</DropdownItem>
+                  <DropdownItem className="font-weight-bold" href="https://amandayonce.github.io/CanvasClock/" >Canvas Clock</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
