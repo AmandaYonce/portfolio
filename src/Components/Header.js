@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import img from './Images/myAvatar.png'
 import {
   Navbar, Nav,
-  NavbarBrand, NavLink, NavItem, UncontrolledDropdown,
+  NavbarBrand, NavItem, UncontrolledDropdown,
   DropdownToggle, DropdownMenu, DropdownItem, Collapse, NavbarToggler
 } from 'reactstrap';
+import { NavLink } from "react-router-dom"
 
 const Header = (props) => {
 
@@ -20,17 +21,17 @@ const toggle = () => setIsOpen(!isOpen)
         <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink className="font-weight-bold" href="/">
+                <NavLink className="font-weight-bold" exact to="/">
                   <img src={img} alt="avatar" className="img-fluid rounded-circle" style={{ width: 36 }} />
                 </NavLink>
               </NavItem>
               
-              <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/">Home</NavLink>
+              <NavItem className="d-flex align-items-center" style={{"padding-right": "10px", "padding-left": "10px", "color": "white"}}>
+                <NavLink  className="font-weight-bold" to="/">Home</NavLink>
               </NavItem>
               
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/resume">Resume</NavLink>
+                <NavLink className="font-weight-bold" to="/resume">Resume</NavLink>
               </NavItem>
               
               <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
