@@ -26,16 +26,16 @@ const toggle = () => setIsOpen(!isOpen)
                 </NavLink>
               </NavItem>
               
-              <NavItem className="d-flex align-items-center" style={{"padding-right": "10px", "padding-left": "10px", "color": "white"}}>
-                <NavLink  className="font-weight-bold" to="/">Home</NavLink>
+              <NavItem className="d-flex align-items-center" style={{"padding-right": "10px", "padding-left": "10px"}}>
+                <NavLink  style={{"color": "lightgrey"}}className="font-weight-bold" to="/">Home</NavLink>
               </NavItem>
               
-              <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" to="/resume">Resume</NavLink>
+              <NavItem className="d-flex align-items-center" style={{"padding-right": "10px", "padding-left": "10px"}}>
+                <NavLink style={{"color": "lightgrey"}}className="font-weight-bold" to="/resume">Resume</NavLink>
               </NavItem>
               
               <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
-                <DropdownToggle className="font-weight-bold" nav caret>Projects</DropdownToggle>
+                <DropdownToggle  style={{"color": "lightgrey"}}className="font-weight-bold" nav caret>Projects</DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem className="font-weight-bold text-secondary text-uppercase" header disabled>My Projects</DropdownItem>
                   <DropdownItem divider />
