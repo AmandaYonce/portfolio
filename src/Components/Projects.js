@@ -25,22 +25,22 @@ class Projects extends Component {
     render() {
       return (
         <>
-            <Row id="row" xs="3">
-            <Col>
+            <Row id="row" xs="4">
+            <Col className="Col">
                     <Card id="card">
                         <CardBody>
-                            <CardImg top width="100%" src={Portfolio} alt="This Portfolio" />
+                            <CardImg style={{border: "1px solid black"}} top width="100%" src={Portfolio} alt="This Portfolio" />
                             <CardTitle>This Portfolio</CardTitle>
                             <img src={Reactimg} alt="React Icon" className="img-fluid" style={{ width: 36 }} />
                             <img src={Firebase} alt="Firebase Icon" className="img-fluid" style={{ width: 36 }} />
                             <img src={Bootstrapimg} alt="Bootstrap Icon" className="img-fluid" style={{ width: 36 }} />
                             <img src={CSSimg} alt="CSS Icon" className="img-fluid" style={{ width: 36 }} />
                             <CardText>See the code for this portfolio</CardText>
-                            <a href="https://amandayoncesc.gitlab.io/kwitter/" >Project Repo</a> <br/>
+                            <a href="https://github.com/AmandaYonce/portfolio/tree/master" >Project Repo</a> <br/>
                         </CardBody>
                     </Card>
                 </Col>
-                <Col>
+                <Col className="Col">
                     <Card id="card">
                         <CardBody>
                             <CardImg style={{border: "1px solid black"}} top width="100%" src={InfMol} alt="Infamouse Molecules" />
@@ -51,7 +51,7 @@ class Projects extends Component {
                         </CardBody>
                     </Card>
                 </Col>
-                <Col>
+                <Col className="Col">
                     <Card id="card">
                         <CardBody>
                             <CardImg top width="100%" src={Kestrel} alt="Kestrel Microblog" />
@@ -66,7 +66,7 @@ class Projects extends Component {
                         </CardBody>
                     </Card>
                 </Col>
-                <Col>
+                <Col className="Col">
                     <Card id="card">
                         <CardBody>
                             <CardImg top width="100%" src={PhotosHere} alt="Photos From " />
@@ -81,7 +81,7 @@ class Projects extends Component {
                     </Card>
                 </Col>
 
-                <Col>
+                <Col className="Col">
                     <Card id="card">
                         <CardBody>
                             <CardImg top width="100%" src={Actzone} alt="Activity Zone" />
@@ -95,7 +95,7 @@ class Projects extends Component {
                         </CardBody>
                     </Card>
                 </Col>
-                <Col>
+                <Col className="Col">
                     <Card id="card">
                         <CardBody>
                             <CardImg style={{border: "1px solid black"}} top width="100%" src={GitUser} alt="Github User API" />

@@ -1,13 +1,11 @@
 #row{
     top: 100px;
     position: absolute;
-    /* width: 90%; */
     margin: 0 auto;
     justify-content: center;
 }
 
-
-#card{
-    border: 2px solid black;
-    margin-top: 10px;
+.Col{
+    /* border: 2px solid black; */
+    margin: 25px;
 }

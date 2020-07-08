@@ -38,7 +38,7 @@ const toggle = () => setIsOpen(!isOpen)
               </NavItem>
 
               <NavItem className="d-flex align-items-center" style={{"padding-right": "10px", "padding-left": "10px"}}>
-                <NavLink style={{"color": "lightgrey"}}className="font-weight-bold" to="/photos">Photos</NavLink>
+                <NavLink style={{"color": "lightgrey"}}className="font-weight-bold" to="/photos">Photography</NavLink>
               </NavItem>
               
             </Nav>
