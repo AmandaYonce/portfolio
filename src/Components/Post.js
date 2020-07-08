@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from 'react';
+import SFcert from "./Images/SFadmincert.jpg"
+import Kenzie from "./Images/kenziecert.jpeg"
+import FCC from "./Images/FCCcert.png"
 import {
     CardBody,
-    CardTitle, CardSubtitle, CardText
+    CardTitle, CardText
   } from 'reactstrap';
 
 
@@ -10,10 +13,20 @@ class Post extends Component {
     return (
       <Fragment>
         <CardBody>
-        <CardTitle className="h3 mb-2 pt-2 font-weight-bold text-secondary">My Journey</CardTitle>
-        <CardSubtitle className="text-secondary mb-3 font-weight-normal text-uppercase" style={{ fontSize: '0.8rem' }}>From Sautee to Scripts</CardSubtitle>
-        <CardText className="text-secondary mb-4 font-weight-normal" style={{ fontSize: '0.95rem' }}>Originally from Surfside Beach, SC I graduated from Socastee High School in 1997.  I moved to Columbia, SC and attended the University of South Carolina for 3 years studying Business Management and ultimately began a career in the Hospitality industry that lasted 22 years and led to owning and operating my own restaurant for the latter 9 years. <br/><br/> Owning a small business has provided me with unique insights that I carry with me into this new chapter of my life.<br/> <br/>I enrolled with Kenzie Academy in 0ctober, 2019 to study Software Engineering.  I will complete my Front End Certificate in April, 2020, my Back End Certificate in Oct 2020 and I will graduate in October, 2020 with a Full Stack Software Engineering Certificate from Kenzie Academy & Butler University.  From day one at Kenzie I have excelled in all aspects of the curriculum.  Kenzie has a unique teaching method that is preparing its students to have all of the necessary tools to succeed in a SE environment.  During my second quarter at Kenzie i was hired by the school as a student coach.  I enjoy mentoring new developers through troubleshooting and delivering apps using HTML, CSS, JavaScript,  and React/Redux.  I have attended Kenzie as a remote student and this has provided me with a great introduction to life as a remote SE. I am a self taught carpenter and in my spare time I enjoy building unique custom furniture.  I often find many similarities between the design issues I encounter in coding and in my carpentry work. <br/><br/> I excell at problem solving and working in a team environment.  My goal is to acquire a remote SE position with a company that values its employees and encourages continued learning in a positive environment.</CardText>
+        <CardTitle className="h3 mb-2 pt-2 font-weight-bold text-secondary">Dear Hiring Manager,</CardTitle>
+        
+        <CardText className="text-secondary mb-4 font-weight-normal" style={{ fontSize: '1rem' }}>
+        As an early career junior Salesforce administrator and junior full stack developer with entry-level and academia-based technical experience, I am an ideal candidate for a Junior Salesforce Developer position.<br/><br/>
+        I am a motivated professional with a demonstrable record of helping organizations meet their goals.  My positive attitude, world-class work ethic, and attention to detail have helped me succeed in a variety of fast-paced environments.  I take my work seriously, and approach every undertaking – whether it is cultivating customer rapport to drive satisfaction, executing software development activities, or managing technical software development projects through fulfillment – with enthusiasm, diligence, and positivity.  I am ready to tackle a challenging, professional position that makes excellent use of my multi-tasking, organizational, technical and relationship management skills.  <br/><br/>
+        My strong communication skills and years of experience working with diverse groups allow me to move with ease and obtain commitments among clients and coworkers of varied backgrounds and different levels of responsibility.  I have the utmost respect for confidentiality, and approach sensitive matters with discretion and tact.  I am especially skilled at keeping operations running smoothly and efficiently in the midst of changes to technologies, procedures, or personnel.  
+        My knowledge and hands-on learning experiences have prepared me well for a challenging role.<br/><br/>
+
+        Sincerely,<br/><br/>
+        Amanda L. Yonce</CardText>
       </CardBody>
+      <img src={SFcert} alt="Salesforce Certification" className="img-fluid" style={{ width: 200 }} />
+      <img src={Kenzie} alt="Kenzie Certification" className="img-fluid" style={{ width: 200 }} />
+      <img src={FCC} alt="Free Code Camp Certification" className="img-fluid" style={{ width: 200 }} />
       </Fragment>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import SideCard from './SideCard';
 import Post from './Post';
 import { Container, Row, Col } from 'reactstrap';
+// import "./main.css"
 
 
 const Main = () => (
